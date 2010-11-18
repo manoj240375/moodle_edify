@@ -1,0 +1,13 @@
+Version 0.32 (13th July, 2010)
+- Add custom menu stylesheet
+- Fixed custom menu height, add back home icon on awesome bar
+------------------------------------------------------------
+Version 0.25 (13th July, 2010)
+- Add smiley icon sets
+- Fixed missing Calendar icons
+- Fixed IE7 render error
+- Add new help icon/upload a file icon
+- Add more icons
+------------------------------------------------------------
+Version 0.1 (9th July, 2010)
+Initial release.

@@ -1,0 +1,204 @@
+
+html {
+	background-color: #787878;
+}
+body   {
+	margin: 50px 0 0;
+	padding: 0;
+	background-color: #787878;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 90%;
+	color: #616161;
+}
+a, 
+a:link,
+a:visited {
+        color:#8C0209;
+	text-decoration: none;
+}
+a,
+a:hover {
+    color: #787878;
+	text-decoration: none;
+	
+}
+a.dimmed:link,
+a.dimmed:visited {
+	color:#aaaaaa;
+	text-decoration: none;
+}	
+p{
+        margin:.4em 0 .8em 0;
+	padding:0;
+}	
+h1, h2, h3 {
+	margin:.8em 0 .2em;
+	padding: 2px;
+	color: #8C0209;
+}
+h1 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+h2 {
+	font-size: 1.6em;
+}
+h3 {
+	font-size: 1em;
+}
+a img {
+	border: none;
+}
+.links {
+	padding: 4px 0px;
+	text-align: right;
+	font-weight: bold;
+}
+.links a {
+	border: none;
+}
+
+
+/** 
+ * Header
+ *
+ */
+
+#page-header {
+        float:left;
+        width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 150px;
+	background: #730003 url([[pix:theme|images/menu-02bg]]) repeat-x 0px 100px;
+	border-bottom:1px solid #000;
+}
+#page-header p {
+	padding:.5em 15px .2em 15px;
+	margin:0;
+}
+#page-header h1  {
+	padding:.2em 15px;
+	margin:0;
+}
+#page-header h2  {
+	padding:.2em 15px .7em 15px;
+	margin:0;
+}
+#logo {
+	width: 92%;
+	height: 100px;
+	margin: 0;
+	padding: 0 1% 0 7%;	
+	background: #fff url([[pix:theme|images/header-01]]) no-repeat left top;
+}
+#logo h1, #logo p {
+	float: left;
+	margin: 0;
+	color: #8C0209;
+}
+#logo span {
+	color: #000000;
+}
+#logo h1 {
+	padding: 25px 0 0 0;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	font-weight: normal;
+	font-size: 3em;
+}
+#logo p {
+	text-transform: uppercase;
+	padding: 47px 0 0 3px;
+	font-size: 10px;
+	color: #110E0F;
+}
+
+#logo p.socioweb-icon { float: right;}
+
+#logo p.socioweb-icon img { float: right; height: 30px; width:30px; padding-left: 5px;}
+
+#logo a {
+	border: none;
+	text-decoration: none;
+	color: #8C0209;
+}
+
+/**  
+ * Menu
+ * 
+ */
+ 
+#top-menu-outer{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	height: 50px;
+	background: url([[pix:theme|images/menu-02rt]]) no-repeat right top;
+}
+#top-menu{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	height: 50px;
+	background: url([[pix:theme|images/menu-02lt]]) no-repeat left top;
+}
+#top-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#top-menu li {
+	display: inline;
+}
+#top-menu a {
+	display: block;
+	float: left;
+	height: 32px;
+	margin: 0;
+	padding: 18px 30px 0 30px;
+	text-decoration: none;
+	text-transform: capitalize;
+	background: url([[pix:theme|images/img03]]) no-repeat right top;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+#top-menu a:hover {
+	color: #FFFFFF;
+}
+#top-menu .current_page_item a {
+	color: #FFFFFF;
+}
+
+/** 
+ * Footer
+ *
+ */
+
+#page-footer p {
+	margin: 0;
+	padding: 25px 15px 0;
+	text-align: center;
+	font-size: smaller;
+}
+#page-footer .link {
+	float: right;
+}
+#page-footer .copyright {
+	float: left;
+}
+
+#page-footer {
+	-moz-border-radius-bottomright: 1.75em 1.75em;
+}
+
+/**
+ * Core 
+ *
+ */
+ 
+ .generalbox {
+ border:0 solid;
+}

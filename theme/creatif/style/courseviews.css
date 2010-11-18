@@ -1,0 +1,65 @@
+/* ____________________________________ the topics and weekly view */
+
+ul.topics li.section, ul.weeks li.section {
+	border: 1px dotted #cfdae3; 
+	background: #ffffff url([[pix:theme|ui-bg_inset-hard_100_ffffff_1x100]]) 50% 50% repeat-x; 
+	font-weight: normal; 
+	color: #212121;
+}
+ul.topics li.section{border-style:solid;}
+ul.topics li#section-0, ul.weeks li#section-0 {
+	border: 1px solid #cfdae3; 
+	background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x; 
+	color: #222222;	
+}
+ul.weeks li.section.current, ul.topics li.section.current  {
+	border: 1px solid #999999; 
+	font-weight: normal; 
+	color: #212121;
+}
+div.summary {padding:5px 0px 5px 0px;}
+
+/* ____________________________________ the weekly view only  */
+
+div.content h3.weekdates { font-weight: bold; margin-bottom:22px;}
+
+/* ____________________________________ the forum view */
+
+table.discussioncontrols td {background:none; border:none}
+div.forumsearch {display:inline; margin-left:22px;}
+
+div#intro {
+	border: 1px solid #d3d3d3; 
+	background: #f0f7b6 url([[pix:theme|ui-bg_gloss-wave_100_f0f7b6_500x100]]) 50% 50% repeat-x; 
+	font-weight: normal; 
+	color: #193a66; 
+	width:99%; 
+	margin:22px 0px 22px 0px;
+}
+
+table.forumpost {width:100%; border-width:0px;}
+td.left.side, td.side {border:none}
+td.picture.left, td.picture {border-right:none;}
+tr.header td.topic {
+	border: 1px solid #cfdae3; 
+	background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x; 
+	color: #222222; 
+}
+tr.header td.starter {
+	border: 1px solid #d3d3d3; 
+	background: #f0f7b6 url([[pix:theme|ui-bg_gloss-wave_100_f0f7b6_500x100]]) 50% 50% repeat-x; 
+	font-weight: normal; 
+	color: #193a66;}
+	
+table.forumpost td.content {border-top:none;}
+div.author {font-size:10px;}
+
+/* ____________________________________ the glossary page */
+
+#page-mod-glossary-view .glossarycontrol {margin:20px 22px 0px 0px;}
+table.glossarycategoryheader {width:100%;}
+table.glossarycategoryheader h2 {padding:0px;}
+table.glossarypost.dictionary {width:100%;}
+table.glossarypost.dictionary td.entrylowersection {border:none;padding:0px;}
+table.glossarypost.dictionary td.entrylowersection table td {border-top:none; padding:none;}
+td.glossarysearchbox {border:none; background:none}

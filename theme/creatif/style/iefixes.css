@@ -1,0 +1,52 @@
+/* ____________________________________ layout issues */
+body.ie div#region-post, body.ie div#region-pre {margin:0px 22px 0px 0px;}
+body.ie div.coursebox, 
+body.ie div.course-content,
+body.ie div.generalbox,
+body.ie div.box,
+body.ie div#intro,
+body.ie div.tabtree,
+body.ie div.sitetopic
+{width: 97%;}
+
+
+body.ie div.sitetopic {padding:5px;}
+body.ie.ie7 div.coursebox div.summary {float:none;margin-left:22px;padding-left:5px;}
+body.ie img.activityicon {margin:2px 1px 3px 0px;}
+
+/* ____________________________________ the tabs */
+body.ie .tabtree ul li.here ul {
+	height:20px;
+	padding:0px;
+}
+body.ie .tabtree ul li.here ul li a{
+	margin:-5px 0px 0px 0px;
+}
+body.ie .tabtree ul li.here ul li,
+body.ie .tabtree ul li.here ul li a,
+body.ie .tabtree ul li.here ul li a:hover,
+body.ie .tabtree ul li.here ul li a:hover span,
+body.ie .tabtree ul li.here ul li a span{
+	display:inline;
+	position:relative;
+	float:none;	
+}
+body.ie .tabtree ul li.here ul li, body.ie .tabtree .tabrow1 li {
+	margin:-5px 0px 0px 0px;
+}
+
+body.ie .tabtree .tabrow0 li.first {
+	margin-right:  2px;
+}
+
+
+/* ____________________________________ the calendar */
+body.ie h3.weekdates {padding-top:11px; font-size:12px;}
+body.ie div.right.side {margin-top:11px;}
+
+/* ____________________________________ the blocks */
+body.ie .block {margin:0px 0px 11px 0px;width:200px;}
+
+/* ____________________________________ the login page */
+body.ie div.loginpanel h2 {position:relative;}
+

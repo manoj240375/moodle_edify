@@ -1,0 +1,446 @@
+/*///////////////////////////*/
+/* This is Edumoodle 2.0 CSS */
+/*///////////////////////////*/
+
+html,body {
+	/*Setting the dynamic background based on Theme settings*/
+	background:[[setting:backgroundcolor]];
+	/*Center the page, with #page-wrapper css*/
+	text-align: center;
+	margin-top: 20px;
+}
+
+#page-wrapper {
+	/*Set a minimum and maximum width in ALL browsers - Line 3 sets the min/max width in IE6*/
+	min-width: 1000px;
+	max-width: 1200px;
+	width:expression(document.body.clientWidth < 1000? "1000px" : document.body.clientWidth > 1200? "1200px" : "auto");
+	background: #fff;
+	/*A little bit of padding to the page*/
+	margin: 10px 5%;
+	/*These 2 lines centre Moodle in your browser window, line 2 correct the
+	text-align: center; as mentioned at line 9.*/
+	margin: 0 auto;
+	text-align: left;
+	padding: 0;
+}
+
+div#page {
+	background: #fff;
+	width: auto;
+	padding: 0!important;
+}
+
+/*Setting link colours and decoration*/
+a:link,
+a:visited {
+	color: [[setting:linkcolor]];
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: [[setting:linkcolor]];
+}
+
+a:hover {
+	text-decoration: underline;
+}
+/*Admin and Navigation Block Link colours and decoration*/
+.block_settings .block_tree .tree_item {
+	color: [[setting:linkcolor]];
+}
+
+.block_navigation .block_tree .tree_item {
+	color: [[setting:linkcolor]];
+}
+/*End of setting link colours and decoration*/
+
+.mform legend {
+	border: 1px solid #e5e5e5;
+	background: #eee;
+	padding: 0 5px;
+}
+
+/* Header */
+
+#page-header {
+	background: [[setting:backgroundcolor]] url([[pix:theme|headerX]]) repeat-x;
+	color: #fff;
+	height: 158px;
+	border-bottom: 5px solid [[setting:bordercolor]];
+	position: relative;
+}
+
+#page-header-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url([[pix:theme|headerL]]);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-color: [[setting:backgroundcolor]];
+	width: 10px;
+	height: 86px;
+}
+
+#page-header-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url([[pix:theme|headerR]]);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-color: [[setting:backgroundcolor]];
+	width: 10px;
+	height: 86px;
+}
+
+#page-header .sitelogo { 
+	float: left;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+#page-header h1.headermain {
+	position: absolute;
+	left: 55px;
+	top: 95px;
+	float: none;
+	font-size: 1.8em!important;
+}
+
+#page-header a:link,
+#page-header a:visited {
+	color: #fff;
+}
+
+#page-header h1.headermain {
+	color: #fff;
+	font-weight: normal;
+	margin: 1em;
+	font-size: 2em;
+}
+.headermenu {
+	font-size: 0.9em!important;
+}
+/* Navbar */
+
+.navbar {
+	padding: 5px;
+	padding-left: 10px;
+	font-size: 0.95em;
+	color: #333;
+}
+
+/* Sideblock & Page Layout*/
+
+#page-content #region-main-box #region-post-box {
+	margin-left:-430px;
+}
+#page-content #region-main-box #region-post-box #region-pre {
+	left: 230px;
+}
+#page-content #region-main-box #region-post-box #region-main-wrap #region-main {
+margin-left: 435px;
+}
+
+/*Sideblock & Page Layout for Page with Single Column of Blocks*/
+
+.side-pre-only #page-content #region-main-box #region-post-box #region-pre {
+	left: 10px;
+}
+.side-pre-only #page-content #region-main-box .region-content {
+	margin-right: 10px;
+}
+
+/* Sideblocks */
+
+.block {
+	border: 0;
+}
+
+.block .header {
+	background: #fff;
+	padding: 2px 5px;
+}
+
+.block .header h2 {
+	color: #333;
+	font-size: 1.2em;
+	line-height: 1;
+}
+
+div.block .content {
+	background: #F0F0F0;
+	border: 0; /*Make sure Boxxee CSS isnt setting a border*/
+	border-top: 4px solid [[setting:blockbordercolor]];
+	padding: 5px 10px;
+}
+
+.block_course_summary  .content {
+	border-top: 0;
+}
+
+/*Calendar */
+
+/* Remove borders from the Calendar block */
+.minicalendar td,
+.minicalendar th {
+    border-color: none;
+	border: none;
+}
+
+.maincalendar .calendar-controls {
+	background: #eee;
+}
+
+/* Course */
+
+#page-course-view-weeks .course-content .section.main { 
+	background:#F0F0F0;
+ }
+
+#page-course-view-weeks .course-content .section.current { 
+	background:[[setting:blockbordercolor]];
+	color:#fff;
+ }
+ 
+/* Users */
+
+.userinfobox .content {
+	background: #eee;
+}
+
+/* Tabs */
+
+.tabtree .tabrow0 li a {
+	background: #eee;
+}
+
+/* Mods */
+
+#intro {
+	background: #eee;
+}
+
+/* Forum */
+
+.forumpost .topic {
+	background: #eee;
+	border: 1px solid [[setting:blockbordercolor]];
+}
+
+.forumpost .starter {
+	background: #eee;
+}
+
+.forumpost .author a:link,
+.forumpost .author a:visited {
+	color: [[setting:linkcolor]];
+}
+
+.forumpost .content {
+	border-width: 0 1px 1px;
+	border-color: [[setting:blockbordercolor]];
+	border-style: solid;
+}
+
+.path-mod-forum .unread .content {
+	background: #eee;
+}
+
+.path-course-view .section .forum .unread a:link,
+.path-course-view .section .forum .unread a:visited {
+	color: [[setting:linkcolor]];
+}
+
+/* Messaging */
+
+.message_user_pictures {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.message_user_pictures td#user1 {
+	width: 45%;
+}
+
+.message_user_pictures td#user2 {
+	width: 45%;
+}
+
+.messagehistory  .messagehistory .heading {
+	margin-top: 10px;
+	border-bottom: 4px solid [[setting:blockbordercolor]];
+	margin-bottom: 5px;
+}
+.messagehistory  .messagehistory .left .message span{
+	padding-left: 10px;
+}
+
+.hiddenelement {
+	display: none;
+}
+
+.messagesend {
+	border-top: 4px solid [[setting:bordercolor]];
+}
+
+.messagesend .fitemtitle {
+	width: 25%;
+	color:#333333;
+	font-size:1.2em;
+	font-weight: bold;
+}
+
+.messagesend .fitem .ftextarea {
+	width: 80%;
+	background: #F0F0F0;
+}
+.messagesend .fitem .ftextarea .messagesendbox {
+	width: 70%;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Resource */
+
+.mod_introbox {
+	background: #eee;
+}
+
+/* Glossary */
+
+.path-mod-glossary .entrybox .glossarycategoryheader th {
+	background: #eee;
+}
+
+/* Forms */
+
+.mform .fitem fieldset.felement {
+	margin: 0 auto 1em;
+	padding-left: 25px;
+	padding-top: 0;
+	text-align: center;
+}
+
+/* Tables */
+
+#page-user-action_redir .generaltable .r1 td,
+#page-user-index #participants .r0 td,
+.path-mod-choice .results .count,
+.path-mod-forum .forumheaderlist .r1 td {
+	background: #eee;
+}
+
+/* Footer */
+
+#page-footer {
+	background: [[setting:backgroundcolor]] url([[pix:theme|footerX]]) repeat-x bottom;
+	position: relative;
+	text-align: left;
+}
+#page-footer-left {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-image: url([[pix:theme|footerL]]);
+	background-position: bottom left;
+	background-color: [[setting:backgroundcolor]];
+	width: 10px;
+	height: 86px;
+}
+
+#page-footer-right {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-image: url([[pix:theme|footerR]]);
+	background-position: bottom right;
+	background-color: [[setting:backgroundcolor]];
+	width: 10px;
+	height: 86px;
+}
+
+#page-footer .footnote {
+	text-align: left;
+	padding-left: 10px;
+	background: #000;
+	margin-bottom: 50px;
+	padding-top: 20px;
+	padding-right: 10px;
+}
+
+#page-footer a {
+	color: #fff;
+}
+
+#page-footer .logininfo {
+	padding: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 0;
+	margin-top: -18px;
+	float: right;
+}
+
+.performanceinfo span {
+	display: block;
+}
+
+/* Slider which appears on the front page */
+#slider {
+	background:[[setting:backgroundcolor]];
+}
+
+#slider .bxslider_wrap {
+	border-bottom: 5px solid [[setting:bordercolor]];
+	padding: 10px 0 10px 0px;
+	position:relative;
+	text-align: center;
+}
+
+#slider .bxslider_container {
+	margin:0 auto;
+	text-align: left;
+	width: 1000px;
+}
+
+#slider .bxslider_container ul {
+	margin: 0;
+}
+
+.bxslider_wrap li {
+	width: 1000px;
+	background: transparent;
+}
+
+.bxslider_wrap li img {
+	float: left;
+	border: 5px solid #fff;
+	margin-right: 10px;
+}
+
+#slider .bxslider_container .content {
+	padding-top: 20px;
+	color: #fff;
+}
+
+#slider .bxslider_wrap .prev {
+	left:5px;
+	position:absolute;
+	top:75px;
+}
+
+#slider .bxslider_wrap .next {
+	position:absolute;
+	right:5px;
+	top:75px;
+}
+
+/* Custom CSS - Applied through the theme settings page */
+/* This CSS overrides all CSS above and any Parent themes */
+
+[[setting:customcss]]

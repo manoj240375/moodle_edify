@@ -1,0 +1,47 @@
+html,
+body { 
+    background-color: #aaf;
+    color: #006;
+}
+
+/* ----- page header, content and footer ----- */
+
+#page-header {
+    background-color: #aaf;
+}
+
+#page-content {
+    background-color: #aaf;
+}
+
+#page-footer {
+    background-color: #aaf;
+}
+
+/* ----- Courses ----- */
+.coursebox {
+    background-color: #fff;
+}
+
+/* ----- page header link ----- */
+.headermain a:link,
+.headermain a:visited {
+    color: #006;
+}
+.headermain a:hover {
+    color: #f00;
+}
+
+/* ----- Overriding base ----- */
+.pagelayout-frontpage #page-header {border-bottom:2px groove #99f;margin:0 0.5%;width:98%;}
+.pagelayout-frontpage #page-footer {border-bottom:2px groove #99f;margin:0 0.5%;width:98%;}
+
+
+/* ----- Boxes ----- */
+.generalbox,
+.informationbox,
+.noticebox,
+.tabledivider {background-color: #fff; border-color:#aaf;}
+.userprofile {background-color: #fff; border-color:#aaf;padding:8px;}
+.header,
+.navbar {background-image:url([[pix:theme|gradient]]);background-repeat: repeat-x;background-color-color:#aaf;border-color:#aaf;}

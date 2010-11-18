@@ -1,0 +1,149 @@
+/* Blocks */
+aside {
+	margin-bottom: 1em;
+	background: #f9f9f9 url([[pix:theme|blockheader]]) repeat-x top;
+	border: 0 none transparent;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: height 1s linear;
+}
+
+.gecko aside {
+	-moz-border-radius-bottomleft:10px;
+	-moz-border-radius-bottomright:10px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	-moz-box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    -moz-transition: height 1s linear;
+}
+
+.safari aside {
+	-webkit-border-bottom-left-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+    -webkit-transition: height 1s linear;
+}
+
+.opera aside {
+    -o-transition: height 1s linear;
+}
+
+aside.noanimhack,
+.gecko aside.noanimhack,
+.safari aside.noanimhack,
+.opera aside.noanimhack {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+#leftside>aside,
+#rightside>aside {
+	width: 100%;
+}
+
+aside.collapsible header {
+	background: transparent url([[pix:theme|blockicon]]) no-repeat 2px 1px;
+	min-height: 21px;
+    text-align: center;
+    padding: 0 0.25em;
+}
+
+aside header h1 {
+	font-size: 1.1em;
+	margin: 0 auto;
+    margin-right: -16px;
+	width: auto;
+	text-align: center;
+    display: inline-block;
+}
+
+aside header .btnclose {
+	float: right;
+	height: 16px;
+	width: 16px;
+	margin-top: 0.25em;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+aside header .btnclose:hover {
+    opacity: 1;
+}
+
+aside.hidden div,
+aside.hidden footer {
+    display: none;
+}
+
+.block .title {
+	text-align: left;
+	font-size: 0.9em;
+	padding: 4px;
+	padding-top: 0;
+	border: 0 none transparent;
+}
+
+.block .title .commands {
+	margin-top: 0.3em;
+	height: 16px;
+}
+
+.block .title .commands a {
+	margin: 0px 2px;
+}
+
+.block > div {
+    background: transparent;
+    padding: 4px;
+    line-height: 1.2em;
+}
+
+.block footer {
+	margin-bottom: 4px;
+	text-align: center;
+	clear: both;
+	background: transparent;
+	height: auto;
+	position: inherit;
+}
+
+.sideblock li
+{
+	line-height: 1.3em;
+}
+
+.sideblock ul.list,
+.sideblock ul.list li,
+.sideblock ul.unlist li
+{
+	list-style-image: none;
+}
+
+#content aside.block
+{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content .block .title,
+#content .block .title h2,
+#content .block .title a,
+#content .block div,
+#content .block div p
+{
+	width: auto;
+	text-align: center;
+}
+
+.block_site_main_menu footer select {
+	font-size: 0.8em;
+}

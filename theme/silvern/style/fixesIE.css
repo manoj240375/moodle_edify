@@ -1,0 +1,17 @@
+/*.ie nav.blackbar {
+	background: transparent;
+	filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)";
+}
+
+.ie7 header nav ul#tabbar li {
+	display: inline;
+	zoom: 1;
+}
+
+.ie7 header nav ul#tabbar li a {
+	display: block;
+}
+
+.ie header div#welcome p {
+	background: [[setting:welcomecolour]];
+}*/

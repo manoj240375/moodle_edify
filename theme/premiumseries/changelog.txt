@@ -1,0 +1,19 @@
+/* 
+Change Log - 11/11/2010
+-----------------------*/
+
+Updated pagelayout.css : fixed side-pre-only/side-post-only/content-only styles - all work correctly
+
+
+
+
+/* 
+Browser Testing
+-----------------------*/
+
+Tested in IE8 --------------- OK
+IE8 Compatibility Mode ------ OK
+Firefox --------------------- OK
+Opera ----------------------- OK
+Safari ---------------------- OK
+Chrome ---------------------- OK

@@ -1,0 +1,35 @@
+/* Login Page */
+.loginbox {
+	margin: 15px auto;
+	border: 1px solid #a3a3a3;
+	width: 50%;
+	overflow: hidden;
+	background: #f9f9f9;
+	border-radius: 2px;
+}
+
+.gecko .loginbox {
+    -moz-border-radius: 2px;
+}
+
+.safari .loginbox {
+    -webkit-border-radius: 2px;
+}
+
+.loginbox h2,
+.loginbox .subcontent {
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+}
+
+.loginbox .loginpanel .desc {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 5px;
+}
+
+.loginbox .loginform {
+	margin-top: 1em;
+	text-align: left;
+}

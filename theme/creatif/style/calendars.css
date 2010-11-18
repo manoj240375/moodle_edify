@@ -1,0 +1,69 @@
+/* ____________________________________ the calendar page */
+
+table td, .minicalendar td.day {
+	border: 1px solid #cfdae3; 
+	background: #ffffff url([[pix:theme|ui-bg_inset-hard_100_ffffff_1x100]]) 50% 50% repeat-x; 
+	font-weight: normal; 
+	color: #212121;
+}
+.minicalendar td.day {border-style:dotted;}
+
+table th, 
+table.calendartable tr.weekdays th,
+.minicalendar tr.weekdays th,
+.maincalendar .calendarmonth th,
+.calendarlayout .sidecalendar .minicalendar th {
+	border: 1px solid #d3d3d3; 
+	background: #f0f7b6 url([[pix:theme|ui-bg_gloss-wave_100_f0f7b6_500x100]]) 50% 50% repeat-x; 
+	font-weight: normal; 
+	color: #193a66;
+}
+.calendarlayout .sidecalendar .minicalendar th, .calendarlayout .sidecalendar .minicalendar td {padding:2px;}
+table.calendartable {border-collapse:collapse}
+td.dayblank {border:none;background:none}
+td.today, .minicalendar td.today {background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x;}
+
+div.calendar-controls, div.minicalendarblock h3, 
+.calendarlayout .block .minicalendarblock h3 {
+	border: 1px solid #cfdae3; 
+	background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x; 
+	color: #222222; 
+	font-weight: bold; 
+	padding:3px; 
+	font-size:11px;
+}
+td.calendar_event_global{background-color:#e5f6cc;background-image:none;}
+td.calendar_event_course{background-color:#ffe1d1;background-image:none;}
+td.calendar_event_group{background-color:#fff5ce;background-image:none;}
+td.calendar_event_user{background-color:#dbf0f4;background-image:none;}
+
+div.calendar-controls h1 {color:#213751;}
+td.maincalendar div {padding:5px;}
+td.sidecalendar div.block {margin:0px 5px 22px 22px;}
+td.sidecalendar { background: none;border:none;}
+table.calendarlayout td.sidecalendar{width:200px}
+body#page-calendar-view div#contentCol, body#page-calendar-event div#contentCol {background:none; border:none;padding:0px;}
+
+/* fix some alignment issues which keep changing with daily builds of moodle */
+
+div.calendar-controls span.current {text-align:center;}
+
+.block_calendar_month .calendar-controls .previous,
+.block_calendar_month .calendar-controls .current,
+.block_calendar_month .calendar-controls .next { display:block;float:left; }
+
+.block_calendar_month .calendar-controls .previous,
+.block_calendar_month .calendar-controls .next { width: 12%; text-align:left; }
+
+.block_calendar_month .calendar-controls .current { width:76%; text-align:center; }
+
+.block_calendar_month .minicalendar { margin:10px auto; }
+
+/* some moodle instances have a non-table based calendar page */
+
+.path-calendar .maincalendar {
+	background: #ffffff url([[pix:theme|bgcontentarea]]) top repeat-x;
+	padding: 11px;
+	border:1px solid #cfdae3;
+	-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;	
+}

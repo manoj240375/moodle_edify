@@ -1,0 +1,64 @@
+/* This next CSS disables that annoying black border around the menu 
+---------------------------------------------------------------------*/
+
+#custommenu .yui3-menu-horizontal.javascript-disabled .yui3-menu-content,
+#custommenu .yui3-menu-horizontal.javascript-disabled .yui3-menu-content .ul {
+border:0px solid #000;
+}
+
+.yui3-skin-sam .yui3-menu-content,
+.yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-content {
+border-style:none;
+}
+
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label,
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menuitem-content {
+border-style:none;
+}
+
+
+/*
+Custom Menu with Javascript Disabled and Custom Menu with Javascript Enabled
+-----------------------------------------------------------------------------*/
+
+div#aardvark-menu { 
+	width: 100%; 
+	margin: 0 auto; 
+	padding: 0;
+	clear:both; 
+	height: 46px; 
+	background: url([[pix:theme|pix_core/menu/menugrad]]) repeat-x top center;
+}
+
+div#custommenu.javascript-disabled,
+div#custommenu { 
+	margin: 0; 
+	padding: 0;
+	height: 46px;
+	width: 100%;
+}
+
+div#custommenu.javascript-disabled a:link,
+div#custommenu.javascript-disabled a:visited,
+div#custommenu a:link,
+div#custommenu a:visited { 
+	color: #fff;
+	text-decoration: none;
+}
+
+div#custommenu.javascript-disabled a:hover,
+div#custommenu.javascript-disabled a:active,
+div#custommenu a:hover,
+div#custommenu a:active { 
+	color: #c0deed;
+	text-decoration: none;
+	background: none;
+}
+
+div#custom_menu_1.yui3-menu.yui3-menu-horizontal.javascript-disabled,
+div#custom_menu_1.yui3-menu.yui3-menu-horizontal { 
+	position: relative; 
+	top: 8px; 
+	margin: 0; 
+	padding: 0;
+}

@@ -1,0 +1,31 @@
+div#aardvark-menu { 
+	width: 100%; 
+	margin: 0 auto; 
+	padding: 0;
+	height: 46px; 
+	background: url([[pix:theme|pix_core/menu/menugrad]]) repeat-x top center;
+}
+div#aardvark-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+div#aardvark-menu li {
+	display: inline;
+}
+div#aardvark-menu a {
+	display: block;
+	float: left;
+	height: 30px;
+	margin: 0;
+	padding: 16px 30px 0 30px;
+	text-decoration: none;
+	text-transform: capitalize;
+	background: url([[pix:theme|pix_core/menu/menudiv]]) no-repeat right top;
+        font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+div#aardvark-menu a:hover {
+	color: #FFFFFF;
+}

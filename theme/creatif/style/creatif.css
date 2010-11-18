@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+/* ____________________________________________________________________  body and backgrounds */
+
+body, html {
+	height:100%;
+}
+body {
+	font:12px Tahoma, Geneva, sans-serif;
+	padding:0px;
+}
+
+/* ____________________________________________________________________  header area, diagonal bars, and text formatting for the whole zone */
+
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {font-family:Tahoma, Geneva, sans-serif;}
+
+div#page-header {
+	background-color:none;
+	background: url([[pix:theme|bgdiagonals-mixed]]) top repeat-x;
+	height: 97px;
+	position: relative;
+	color: #ffffff;
+}
+div#page-header h1.headermain {
+	font: 18px bold Tahoma, Geneva, sans-serif; 
+	position: absolute; 
+	left: 22px; 
+	top: 18px; 
+	margin:0px; 
+	padding:0px;
+}
+
+div.headermenu { width: 50%; margin:22px 22px 0px 0px; }
+
+div#page-header div.headermenu div.logininfo,
+div.singlebutton, 
+div.headermenu form, 
+div.headermenu form div {
+	display:inline; text-align:right;
+}
+div.headermenu form div {margin-left:22px;}
+
+div.breadcrumb {
+	position: absolute;
+	top: 66px;
+	left: 22px;	
+}
+div.modified {font-size:85%;padding-top:5px;color:#666666;}
+
+/* ____________________________________________________________________  page layouts */
+
+div#page-content {
+	padding:0px;
+	margin:0px;	
+	width: 100%;
+	position:relative;
+}
+div#region-main div#contentCol {
+	background: #ffffff url([[pix:theme|bgcontentarea]]) top repeat-x;
+	padding: 22px;
+	margin:auto;
+	border:1px solid #cfdae3;
+	-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;	
+}
+div#region-post,div#region-pre {	
+	width:200px;
+	float:right;
+	margin:-11px 22px 0px 0px;
+}
+div#page-footer {
+	height: 300px;
+	text-align: center;
+	color: #ffffff;
+	padding-top:22px;
+	clear:both;
+}	
+div#page-footer div.logininfo {padding:11px;}
+
+a img#institutionalLogo {border:none; }
+img#institutionalLogo {margin: 22px 0px 22px 0px;}
+
+/* conditions - adjusting the margins for the various layouts - VERY important css, even the order its in */
+
+body.both-pre-post 	div#region-main div#contentCol	{margin:0px 466px 0px 22px;} /* for 3 col layouts */
+
+body.side-pre-only 	div#region-main div#contentCol,
+body.side-post-only div#region-main div#contentCol 	{margin: 0px 244px 0px 22px;} /* for 2 col layouts */
+
+body.content-only 	div#region-main div#contentCol	{margin:0px 22px 0px 22px;} /* for 1 col layouts */
+
+/* fix issues with css clear, the content is conflicting with the floating column for the boxes */
+
+.clearfix:after {clear: left;}
+.clearer {clear:left;}
+
+/* ____________________________________________________________________  general text / element formatting */
+
+div.content h1,h2,h3,h4,h5,h6,h2.headingblock,h1.helpheading {color:#213751;}
+h3 {line-height:1.2em}
+h2.main {padding-top:1.5em}
+hr { height:1px; background-color:#CFDAE3; border:0;}
+
+div#page-footer a:link, div#page-footer a:visited, 
+div#page-header a:link, div#page-header a:visited { 
+	text-decoration:none; color: #ccff00; 
+}
+div#page-footer a:active, div#page-footer a:hover,
+div#page-header a:active, div#page-header a:hover { 
+	text-decoration:none; color: #0099ff; 
+}
+a:link, a:visited { text-decoration:none; color:#0066cc;}
+a:active, a:hover { text-decoration:none; color: #669900;}
+
+div.homelink a, div.homelink a:active, div.homelink a:hover, div.homelink a:visited {border:none}
+
+div.loginerrors {margin:9px;}
+span.error, div.errorbox {
+	border: 1px solid #cd0a0a; 
+	background: #fef1ec url([[pix:theme|ui-bg_diagonals-medium_95_fef1ec_40x40]]) 50% 50% repeat;
+	color: #cd0a0a; 
+	padding:5px; 
+	margin:5px;
+	-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+}
+
+div.categorybox, .categorybox .category {
+	font-size:12px;
+	border:none;	
+}
+div.categorybox table td.name {
+	border: 1px solid #d3d3d3; 
+	background: #f0f7b6 url([[pix:theme|ui-bg_gloss-wave_100_f0f7b6_500x100]]) 50% 50% repeat-x; 
+	font-weight: normal; 
+	color: #193a66;
+}
+div.categorybox table td.number {
+	border: 1px solid #cfdae3; 
+	background: #ffffff url([[pix:theme|ui-bg_inset-hard_100_ffffff_1x100]]) 50% 50% repeat-x; 
+	font-weight: normal; 
+	color: #212121;
+}
+
+.headingblock {padding-bottom:9px;}
+
+.generalbox {
+	border: 1px solid #cfdae3;
+	background: #ffffff url([[pix:theme|ui-bg_flat_75_ffffff_40x100]]) 50% 50% repeat-x; 
+	color: #222222; 
+	padding:5px;
+	-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; 
+}
+
+.boxwidthnormal {width:100%;}
+div#pageintro {
+	border:none; 
+	color:#213751;
+	padding:0px 0px 5px 0px;
+}
+
+/* ____________________________________________________________________  custom icons */
+
+img.activityicon {margin:-3px 1px 3px 0px;}
+
+/* ____________________________________________________________________  forms */
+
+fieldset, .mform fieldset {border: 1px solid #cfdae3}
+legend {color:#333333;}
+div#userselector_options {padding:11px 0px 11px 0px;}
+form.loginform input {margin:3px; }
+div.form-label {padding-top:3px;}
+/* ____________________________________________________________________  yui popups */
+
+div.yui3-overlay-content {padding-top: 11px;}
+div.yui3-overlay {
+	border: 1px solid #cfdae3; 
+	background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x; 
+	color: #222222; 
+	padding:5px;
+	-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+}
+div#helppopupbox .yui3-widget-bd {border-top:none;}
+
+/* ____________________________________________________________________  specific pages or layouts */
+
+/* ____________________________________ the login page */
+body#page-login-index div#region-main, body#page-login-index div#region-main div#contentCol { 
+	background:none; text-align:center; border:none;
+}
+div.loginbox { width: 500px; margin:auto; }
+div.loginpanel { 
+	border: 1px solid #cfdae3; 
+	background: #ffffff url([[pix:theme|ui-bg_flat_75_ffffff_40x100]]) 50% 50% repeat-x; 
+	color: #222222; 
+	font-size:12px; 
+	-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+div.loginpanel h2 {  
+	background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x; 
+	color: #222222; 
+	font-size:14px; 
+	font-weight: bold; 
+	padding:5px; 
+	margin:0px;
+	-moz-border-radius-topleft: 10px; -webkit-border-top-left-radius: 10px; border-top-left-radius: 10px; -moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius: 10px; 
+}
+div.loginform div.clearer {clear:both}
+div#page-footer.smallpage {text-align:center; height:auto;}
+
+/* ____________________________________ the front page  */
+div.sitetopic {
+	margin-bottom:22px;
+	background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x; 
+	padding:11px; 
+	clear:none;
+}
+div.coursebox {
+	border: 1px solid #cfdae3; 
+	background: #ffffff url([[pix:theme|ui-bg_inset-hard_100_ffffff_1x100]]) 50% 50% repeat-x; 
+	font-weight: normal; 
+	color: #212121; 
+	padding: 11px 0px 11px 0px; 
+	width:100%;
+}
+div.coursebox div.info {margin-left:11px;}
+div.coursebox div.summary {margin-right:11px; float:none; margin-left:44%;}

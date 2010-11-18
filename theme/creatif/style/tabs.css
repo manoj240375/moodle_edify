@@ -1,0 +1,123 @@
+.tabtree {margin-bottom:22px}
+.tabtree ul {
+	text-align: center;
+	border: 1px solid #cfdae3; 
+	background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x; 
+	color: #222222; 
+	margin: 0px; 
+	padding: .2em .2em 0; 
+	display: inline-block;
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	border-radius: 4px; 	
+	font-size:11px;
+}
+.tabtree ul li.here ul {
+	width:auto;
+	overflow:visible;
+	white-space:nowrap;
+	position:absolute;
+	left:-1px;
+	top:100%;
+	height:22px;
+	background: none;
+	border-top:none;
+
+}
+.tabtree ul li.here ul li, .tabtree .tabrow1 li {
+	display:inline;
+	border:0px;
+	background:none;
+	color: #193a66;
+	margin:-2px 0px 0px 0px;
+	padding:0px;
+}
+
+.tabtree .tabrow0, .tabtree .tabrow1 {
+	margin: 0px;
+	padding: .2em .2em 0; 
+}
+.tabtree .tabrow0 .tabrow1 {
+	border-top:none;
+	margin-top:-1px;
+	margin-bottom:11px;	
+	padding: .2em .2em 0; 
+}
+.tabtree ul li.here ul li.here, .tabtree .tabrow1 li.here {border:none;background:none;}
+
+
+.tabtree .tabrow0 li {
+	list-style: none; 
+	float: left;  
+	top: 1px; 
+	margin: 0 .2em 1px 0; 
+	border-bottom: 0px !important; 
+	padding: 0px; 
+	white-space: nowrap;
+	border: 1px solid #d3d3d3; 
+	background: #f0f7b6 url([[pix:theme|ui-bg_gloss-wave_100_f0f7b6_500x100]]) 50% 50% repeat-x; 
+	font-weight: normal; 
+	color: #193a66;
+	-moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px;	
+	-moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px;
+}
+.tabtree .tabrow0 li {position:relative}
+
+.tabtree .tabrow0 li.here{
+	margin-bottom: 0;
+	padding-bottom: 1px;
+	border: 1px solid #cfdae3; 
+	background: #ffffff url([[pix:theme|ui-bg_inset-hard_100_ffffff_1x100]]) 50% 50% repeat-x; 
+	font-weight: normal; 
+	color: #212121;
+}
+
+.tabtree .tabrow0 ul,
+.tabtree .tabrow0 div {
+	border-top: none;
+}
+
+.tabtree .tabrow0 li.here .empty {
+	display:  inherit;
+	height: inherit;
+	overflow:  inherit;
+	padding:  inherit;
+	position:  inherit;
+	width: inherit;
+	bottom: inherit;
+}
+
+.tabtree .tabrow1 {
+	-moz-border-radius-topleft: 0px; -webkit-border-top-left-radius: 0px; border-top-left-radius: 0px;	
+	-moz-border-radius-topright: 0px; -webkit-border-top-right-radius: 0px; border-top-right-radius: 0px;
+}
+
+.tabtree .tabrow0 li a, 
+.tabtree .tabrow0 li.here a, 
+.tabtree li.here a, 
+.tabtree .tabrow0 .here a, 
+.tabtree .here a, 
+.tabtree a.nolink,
+.tabtree a.nolink:hover,
+.tabtree .here a.nolink,
+.tabtree .here a.nolink:hover,
+.tabtree .here ul .here a.nolink:hover 
+.tabtree .here ul .here a.nolink,
+.tabtree .here ul a.nolink:hover,
+.tabtree .here ul a.nolink,
+.tabtree ul li.here ul li a, 
+.tabtree .tabrow1 .here a,
+.tabtree .tabrow1 li.here a,
+.tabtree .tabrow1 li a,
+.tabtree .tabrow1 li a,
+.tabtree .tabrow1 li a:hover
+{
+	background:none; float: left; padding: .5em 1em; text-decoration: none; border:none;
+}
+
+.tabtree .tabrow1 li a span,
+.tabtree .tabrow1 li a:hover span 
+{
+	padding: none;
+}
+

@@ -1,0 +1,18 @@
+/* ____________________________________ the custom menu */
+
+div#custommenu a:link, div#custommenu a:visited { 
+	text-decoration:none; color: #ccff00; 
+}
+div#custommenu a:active, div#custommenu a:hover { 
+	text-decoration:none; color: #0099ff; 
+}
+div#custommenu * {
+	background-color:#282828; 
+	border:none;
+	border:1px solid #282828;	
+}
+div#custommenu {
+	border-bottom:1px solid #666;
+	padding:3px;
+	background: #282828 url([[pix:theme|menugrad]]) repeat-y;
+}

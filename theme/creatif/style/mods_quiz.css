@@ -1,0 +1,99 @@
+/* ____________________________________ the quiz mod */
+
+#page-mod-quiz-edit div.quizcontents,
+#page-mod-quiz-edit div.quizwhenbankcollapsed {
+	float:none;
+	clear:none;
+	display:inline;
+	width:60%; 
+}
+
+#page-mod-quiz-edit div.reorder .reordercontrols {
+	display:inline;
+	position:relative;	
+	clear:none;
+}
+#page-mod-quiz-edit div.reorder .reordercontrols .moveselectedonpage {
+	clear:none;
+	float:none;
+	text-align:right;	
+}
+#page-mod-quiz-edit div.reorder .reordercontrols .addnewpagesafterselected, #page-mod-quiz-edit .repaginatecommand {clear:none;}
+
+#page-mod-quiz-edit div.reorder div.question {clear:none;width:auto}
+#page-mod-quiz-edit div.question div.questioncontainer div.qnum {
+	float:none;
+	dispay:inline;
+	width:33px; 
+	border-right:1px dotted #cfdae3; 
+	text-align:left;
+}
+#page-mod-quiz-edit div.question div.questioncontainer div.content {
+	float:none;
+	display:block;
+	position:relative;
+	margin-left:44px;
+	margin-top:-20px;
+}
+#page-mod-quiz-edit div.question div.questioncontainer div.content div.questioncontrols {
+	float:none;
+	display:inline;
+	position:absolute; 
+	right:0px;
+}
+
+#page-mod-quiz-edit div.question div.questioncontainer div.content div.qorder {float:none;display:inline;}
+#page-mod-quiz-edit div.question div.questioncontainer div.content div.questioncontentcontainer {display:block; min-height:38px;}
+
+#page-mod-quiz-edit div.question div.questioncontainer{background:none}
+#page-mod-quiz-edit .pagecontrols {clear:none;display:block;padding:5px 0px 5px 33px;}
+#page-mod-quiz-edit .addpage {clear:left;}
+#page-mod-quiz-edit .questioncontentcontainer div.randomquestionqlist {clear:none}
+#page-mod-quiz-edit div.quizpage span.pagetitle {
+	float:none;
+	margin:22px 0px 22px 0px;
+	text-align:left;
+	display:block;
+}
+#page-mod-quiz-edit div.quizpage {
+	clear:left;
+	display:block;
+	position:relative;
+	width:auto;
+}
+#page-mod-quiz-edit div.quizpage .pagecontent {
+	float:none;
+	width:auto;	
+	clear:none;
+	min-height:65px;
+	border: 1px solid #cfdae3; 
+	background: #ffffff url([[pix:theme|ui-bg_flat_75_ffffff_40x100]]) 50% 50% repeat-x; 
+	color: #222222; 
+	padding:5px;padding-bottom:40px;
+	-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; 
+}
+
+#page-mod-quiz-edit div.questionbank form .invisiblefieldset{clear:none;}
+#page-mod-quiz-edit div.questionbankwindow {
+	display:inline;
+	clear:none;	
+	float:none;
+	width:30%;
+	margin-left:11px;
+}
+#page-mod-quiz-edit .questionbankwindow div.header {
+	border: 1px solid #cfdae3; 
+	background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x; 
+	color: #222222; 
+	font-weight: bold; 
+	padding:3px; 
+	font-size:11px;
+}
+#page-mod-quiz-edit .questionbankwindow div.header a {color:#0066cc;}
+#page-mod-quiz-edit .questionbankwindow div.bd {
+	border: 1px solid #cfdae3; 
+	border-top:none; 
+	background: #ffffff url([[pix:theme|ui-bg_inset-hard_100_ffffff_1x100]]) 50% 50% repeat-x;
+	padding:11px;
+}
+#page-mod-quiz-edit .questionbankwindow div.categoryinfo, #page-mod-quiz-edit div.questionbank {background:none;}

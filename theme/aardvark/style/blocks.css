@@ -1,0 +1,90 @@
+/* 
+Core: Side Block
+-----------------------*/
+.block {border:1px dotted #ddd;margin-bottom:1em;}
+.block .header h2 {margin:4px;}
+.block .header .block_action {float:right;margin:0 4px;vertical-align:top;}  
+.block .header .block_action input {margin-right:2px;}	
+.block .content {padding:4px;}	
+.block.hidden .content {display: none;}	 
+.block .content .userpicture {width:16px;height:16px;margin-right:4px;}	 
+.block .content .list li.listentry {clear:both;}  
+.block .content .list .c0 {display:inline;}  
+.block .content .list .c1 {margin-left:5px;display:inline;}  
+.block .footer {margin-bottom: 4px;}  
+.block .blockannotation {font-size:0.75em;margin: -1em 0 1em;}	
+
+.block.beingmoved {border-width: 2px;border-style: dashed;}  
+.blockmovetarget {display: block;height: 1em;margin-bottom: 1em;border-width: 2px;border-style: dashed;} 
+
+.block-region .invisible {opacity: 0.5; filter: alpha(opacity=50);}  
+
+.block .block-hider-show, 
+.block .block-hider-hide {cursor:pointer;}  
+.block .block-hider-show,  
+.block.hidden .block-hider-hide {display:none;} 
+.block.hidden .block-hider-show {display:inline;}  
+
+/** Overide for RTL layout **/
+.dir-rtl .block .header .block_action {float:left;}
+.dir-rtl .block .header .commands { text-align: right;}
+
+#region-pre .block-region {
+	float: left;
+	width: 210px;
+	margin: 0;
+	padding: 0;
+}
+#region-post .block-region {
+	float: right;
+	width: 210px;
+	margin: 0;
+	padding: 0;
+}
+
+.block-region {
+	float: left;
+	padding: 0;
+	font-size: 12px;
+}
+.block-region ul {
+	margin: 0;
+	padding: 5px 0;
+	list-style-type: none;
+}
+.block-region li {
+	padding: 0 0 20px 0;
+}
+
+.block-region li ul {
+}
+
+.block-region li li {
+	margin: 0 20px 0 10px;
+	padding: 8px 0px;
+}
+
+.block .header {
+	border-bottom:0px none none;
+	width: 100%;
+	background: #ffffff url([[pix:theme|pix_core/core/h2grad]]) repeat-x left top;
+}
+
+
+.block .header h2 {
+	margin: 0;
+	padding: 10px;
+	font-size: 1.2em;
+	color: #444;
+}
+
+.block .header .block_action {
+	float:right;
+	margin:0.5em;
+	vertical-align:top;
+}
+
+.block .minicalendar {
+	margin:10px auto;
+	width:100%;
+}

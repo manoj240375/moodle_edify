@@ -1,0 +1,110 @@
+.coursebox {
+    background: #f9f9f9;
+    position: relative;
+    margin: 0;
+}
+
+.coursebox .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    padding: 0 0.5em;
+    float: none;
+}
+
+.coursebox .info h3 {
+    margin: 5px 0;
+}
+
+.coursebox .summary {
+    margin-left: 45%;
+    width: 55%;
+    min-height: 1.5em;
+}
+
+.course-content .weeks .section,
+.course-content .topics .section {
+    background: #f9f9f9;
+    border: 1px solid #a3a3a3;
+    border-radius: 2px;
+    padding: 3px 0px !important;
+}
+
+.course-content .section .section {
+    border: 0 none;
+}
+
+.modified {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.glossarydisplay {
+    background: #f9f9f9;
+    border: 1px solid #a3a3a3;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.forumpost {
+    background: #f9f9f9;
+    border-color: #a3a3a3;
+    border-radius: 2px;
+    border-bottom-right-radius: 5px;
+}
+
+.gecko .forumpost {
+    -moz-border-radius: 2px;
+    -moz-border-radius-bottomright: 5px;
+}
+
+.safari .forumpost {
+    -webkit-border-radius: 2px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+.forumpost .header,
+.forumpost .header .left {
+    background: #e0e0e0;
+    border-color: #a3a3a3;
+    background-image: linear-gradient(top, #e8f2ff, #e0e0e0);
+    border-right: 0 none;
+}
+
+.forumpost .topic {
+    border-color: #a3a3a3;
+}
+
+.safari .forumpost .header,
+.safari .forumpost .header .left{
+    background: #e0e0e0 -webkit-gradient(linear, left top, left bottom, from(#e8f2ff), to(#e0e0e0));
+}
+
+.gecko .forumpost .header,
+.gecko .forumpost .header .left {
+    background: #e0e0e0 -moz-linear-gradient(top, #e8f2ff, #e0e0e0);
+}
+
+.forumpost .left {
+    border-right: 1px solid #a3a3a3;
+    background: #e0e0e0;
+}
+
+.forumpost thead .left {
+    border-right: 0 none;
+}

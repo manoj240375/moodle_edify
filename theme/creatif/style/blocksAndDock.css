@@ -1,0 +1,75 @@
+/* ____________________________________ the standard blocks css with some changes - shared with some dock styles for consistency */
+
+.block.hidden .header {border-bottom-width:0;}
+.block.hidden .content {display: none;}
+.block {margin:11px 0px 0px 0px;width:200px;}
+.block, div.dockeditempanel {
+	border: 1px solid #cfdae3; 
+	background: #ffffff url([[pix:theme|ui-bg_flat_75_ffffff_40x100]]) 50% 50% repeat-x; 
+	color: #222222; 
+	font-size:12px; 
+	-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; 
+}
+.block .header, div.dockeditempanel_hd { 
+	background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x; 
+	color: #222222; 
+	font-weight: bold; 
+	padding:5px;
+}
+.block .header h2, div.dockeditempanel_hd h2 {font-size:12px; margin:0px;}
+.block .header .block_action {float:right;margin:0 4px;vertical-align:top;}
+.block .header .block_action input {margin-right:2px;}
+.block .content {}
+.block .footer {margin-bottom: 4px;}
+
+.block img.userpicture {width:16px;height:16px;margin-right:4px;}
+.block.beingmoved {border-width: 2px;border-style: dashed;}
+
+.block-region .hidden .header {}
+.block-region .hidden .content {display: none;}
+.block-region .invisible {opacity: 0.5;filter: alpha(opacity=0.5);}
+
+.blockmovetarget {
+	display: block;
+	height: 1em;
+	margin-bottom: 1em;
+	border-width: 2px;
+	border-style: dashed;
+}
+
+div.block_course_summary {background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x;color:#213751;}
+
+.block .blockannotation {font-size:0.75em;margin: -1em 0 1em;}
+.block.beingmoved {border-width: 2px;border-style: dashed;}
+.block .content ul.list li.listentry {clear:both;}
+
+/** List block contents **/
+.block .list .c0, div#dock .list .c0, div#dock div.block_site_main_menu ul li {display:inline; list-style:none;}
+.block .list .c1, div#dock .list .c1 {margin-left:5px;display:inline;}
+
+.block_tree .tree_item {padding-top:2px;}
+.block_settings .block_tree .tree_item {margin:3px 0px 2px 0px;}
+.block_settings .block_tree .tree_item a {margin:3px 0px 0px 2px;}
+
+div.block_dock_placeholder {margin-top:-1px} /* fixes a little issues that bumps the remaining blocks down 1px */
+
+/* ____________________________________ dock-specifics  */
+
+/* positioning to the right instead of left */
+
+div#dock.dock.dock_left_vertical {left:auto; right:0px;}
+body.has_dock {margin:0px 30px 0px 0px;}
+div#dockeditempanel {left:-201px;} /* makes the assumption that the width of the dock panels are 200px */
+
+div#dock.dock.dock_left_vertical { 
+	background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x;
+	border: 1px solid #999999;
+}
+div#dock div.dockeditem_container {background: #e3e9ee url([[pix:theme|ui-bg_glow-ball_75_e3e9ee_600x600]]) 50% 50% repeat-x;}
+div#dock div.dockedtitle {
+	border-top: none;	
+	color: #0066cc;
+	border-bottom: 1px solid #999999;	
+}
+div#dock div.dockeditempanel_content {border: 1px solid #999999;}
+div#dock div.dockeditempanel_hd {border-bottom:none;}

@@ -1,0 +1,246 @@
+/* Core */
+html {
+	background-color: #dbdbdb;
+	background-image: url([[pix:theme|background]]);
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+
+body {
+	background: transparent;
+	min-width: 1000px;
+}
+
+.wf-inactive {
+	font-family: sans-serif;
+}
+
+.wf-active body {
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.wf-active i {
+	font-family: 'Droid Serif', sans-serif;
+}
+
+/* Declaring HTML 5 elements */
+article, aside, dialog, figure, footer, header, legend, nav, section {
+	display: block;
+}
+
+h1 {
+	font-size: 138.5%;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 123.1%;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 108%;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: 85%;
+	font-weight: bold;
+}
+
+h6 {
+	font-size: 77%;
+	font-weight: bold;
+}
+
+h1.main,
+h2.main,
+h3.main,
+h4.main,
+h5.main,
+h6.main {
+	font-weight:bold;
+}
+
+#page {
+	padding: 15px 10px 0;
+    width: auto;
+	background: transparent;
+	max-width: 1445px;
+    margin: 0 auto;
+}
+
+#leftside {
+	width: 210px;
+	float: left;
+	background: transparent;
+	margin-right: 15px;
+}
+
+#rightside {
+	width: 210px;
+	float: right;
+	background: transparent;
+	margin-left: 15px;
+}
+
+#content {
+	background: transparent;
+	border: 0 none transparent;
+	min-height: 250px;
+}
+
+.blocksleft {
+	margin-left: 225px;
+}
+
+.blocksright {
+	margin-right: 225px;
+}
+
+.clearfix:after {
+    clear: none;
+    display: inline;
+    height: auto;
+}
+
+.clearer {
+    clear: none;
+}
+
+a img {
+	border:none;
+    text-decoration: none;
+}
+
+a:hover,
+a:visited {
+    color: #426fd9;
+}
+
+.accesshide {
+	position:absolute;
+	top:-100000px;
+	left:10px;
+	font-weight:normal;
+	font-size:1em;
+}
+
+a.skip-block, a.skip {
+	position: absolute;
+	top: -1000em;
+	font-size: 0.85em;
+}
+
+.box {
+	clear: none;
+}
+
+.generalbox {
+	padding: 10px;
+	margin-bottom: 15px;
+	background: #f9f9f9;
+	border-radius: 2px;
+    border: 1px solid #a3a3a3;
+}
+
+.gecko .generalbox {
+	-moz-border-radius: 2px;
+}
+
+.webkit .generalbox {
+	-webkit-border-radius: 2px;
+}
+
+.boxaligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.boxalignright {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.boxalignleft {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.boxwidthnarrow {
+	width: 30%;
+}
+
+.boxwidthnormal {
+	width: 50%;
+}
+
+.boxwidthwide {
+	width: 80%;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.unlist {
+    background: #f9f9f9;
+    margin: 0.5em 20px;
+    border: 1px solid #a3a3a3;
+    border-radius: 2px;
+}
+
+.categorybox {
+	background: #f9f9f9;
+	margin: 0.5em 20px;
+	border: 1px solid #a3a3a3;
+	border-radius: 2px;
+}
+
+.safari .categorybox {
+	-webkit-border-radius: 2px;
+}
+
+.gecko .categorybox {
+	-moz-border-radius: 2px;
+}
+
+.course_category_tree {
+    background: #f9f9f9;
+    border: 1px solid #a3a3a3;
+    border-radius: 2px;
+    margin: 0.5em 20px;
+    padding: 10px;
+}
+
+.safari .course_category_tree {
+	-webkit-border-radius: 2px;
+}
+
+.gecko .course_category_tree {
+	-moz-border-radius: 2px;
+}
+
+.course_category_tree .controls {
+    display: none;
+}
+
+.userprofile {
+    background: #f9f9f9;
+    border: 1px solid #a3a3a3;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+.gecko .userprofile {
+    -moz-border-radius: 2px;
+}
+
+.safari .userprofile {
+    -webkit-border-radius: 2px;
+}

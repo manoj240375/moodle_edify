@@ -1,0 +1,347 @@
+/* Pre-Header Blackbar */
+nav.blackbar {
+	font-size: 93%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: white;
+	height: 1em;
+	padding-bottom: 5px;
+	padding-top: 3px;
+	white-space: nowrap;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+}
+
+nav.blackbar span.left {
+	float: left;
+	text-align: left;
+	margin-left: 5px;
+}
+
+nav.blackbar span.right {
+	float: right;
+	text-align: right;
+	margin-right: 5px;
+}
+
+nav.blackbar span a {
+	color: #d2eaf3;
+}
+
+.logininfo {
+	display: inline;
+}
+
+
+
+/* Header */
+body>header {
+	margin: 0 auto;
+	width: 995px;
+	border-bottom: 1px solid darkgrey;
+}
+
+header nav {
+	margin-top: 15px;
+	position: relative;
+	left: -1px;
+}
+
+header nav ul#tabbar {
+	position: static;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 996px;
+	border-bottom: 1px solid darkgray;
+}
+
+header nav ul#tabbar li {
+	margin:0 0.25em 0 0; /* space between tabs */
+	padding: 1px 0 0; /* gecko: make room for overflow */
+	display: inline-block;
+	vertical-align: bottom;
+	list-style: none;
+}
+
+header nav ul#tabbar li a {
+	background: #d8d8d8 url(http://yui.yahooapis.com/2.8.0/build/assets/skins/sam/sprite.png) repeat-x; /* tab background */
+	border: solid #a3a3a3;
+	border-width: 0 1px;
+	color: black;
+	font-weight: bold;
+	font-size: 108%;
+	position: relative;
+	text-decoration: none;
+	display: block;
+	display: inline-block;
+}
+
+header nav ul#tabbar li a em {
+	border: solid darkgray;
+	border-width: 1px 0 0;
+	cursor: pointer;
+	padding: 0.25em .75em;
+	left: 0;
+	right: 0;
+	bottom: 0; /* protect from other orientations */
+	top: -1px; /* for 1px rounded corners */
+	position: relative;
+	font-style: normal;
+	display: block;
+	font-weight: bold;
+}
+
+header nav ul#tabbar li:hover a,
+header nav ul#tabbar li a:focus {
+	background: #bfdaff url(http://yui.yahooapis.com/2.8.0/build/assets/skins/sam/sprite.png) repeat-x left -1300px; /* selected tab background */
+	outline: 0;
+	z-index: 201;
+}
+
+header nav ul#tabbar li:hover a em,
+header nav ul#tabbar li a:focus em {
+	z-index: 201;
+}
+
+header nav ul#tabbar li.selected { 
+	margin: 0 0.25em -1px 0; /* for overlap */
+}
+
+header nav ul#tabbar li.selected a,
+header nav ul#tabbar li.selected a:focus, /* no focus effect for selected */
+header nav ul#tabbar li.selected:hover a { /* no hover effect for selected */
+	background: [[setting:welcomecolour]] none;
+	border-color: [[setting:welcomecolour]];
+	color: white;
+	top: 1px;
+	z-index: 201;
+	text-shadow: rgba(0, 0, 0, .5) 0.1em 0.15em 0.5em;
+}
+
+header nav ul#tabbar li.selected a em {
+	padding: 0.40em 0.75em; /* raise selected tab */
+	border-color: [[setting:welcomecolour]];
+}
+
+header nav ul#tabbar li ul {
+	visibility: hidden;
+	position: absolute;
+	display: block;
+	z-index: 200;
+	background: #bfdaff;
+	list-style-type: none;
+	width: 200px;
+	margin: 0;
+}
+
+header nav ul#tabbar li:hover ul,
+header nav ul#tabbar li a:focus + ul {
+	visibility: visible;
+	box-shadow: 0 10px 15px black;
+}
+
+header nav ul#tabbar li ul li {
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul#tabbar li:hover ul li a,
+header nav ul#tabbar li a:focus + ul li a {
+	width: 200px;
+	font-size: 100%;
+	background: #bfdaff none;
+}
+
+header nav ul#tabbar li ul li a em {
+	border: 0 none;
+}
+
+header nav ul#tabbar li ul li:first-child a em {
+	border-top: 1px solid darkgray;
+	top: -1px;
+}
+
+header nav ul#tabbar li ul li:last-child a em {
+	border-bottom: 1px solid darkgray;
+	top: 1px;
+}
+
+header nav ul#tabbar li ul li a:hover,
+header nav ul#tabbar li ul li a:focus {
+	background: #2647a0 url(http://yui.yahooapis.com/2.8.0/build/assets/skins/sam/sprite.png) repeat-x left -1400px;
+	color: white;
+}
+
+header #logo {
+	float: right;
+	position: relative;
+	height: 201px;
+	background: white;
+	background-image: url([[setting:logourl]]);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 305px;
+	border: 1px solid darkgray;
+	border-bottom: 0;
+	border-top: 0;
+	text-align: center;
+	right: -1px;
+}
+
+header div#welcome {
+	background: white url([[pix:theme|schoolbg]]);
+	border-left: 1px solid [[setting:welcomecolour]];
+	margin-right: 305px;
+	height: 201px;
+	clear: left;
+	position: relative;
+	left: -1px;
+}
+
+header #welcome p {
+	background: [[setting:welcomecolour]];
+	position: absolute;
+	top: 0;
+	width: auto;
+    min-width: 200px;
+	height: 191px;
+	border-bottom: 1px solid [[setting:welcomecolour]];
+	color: white;
+	font-size: 123.1%;
+	text-align: center;
+	padding: 0 15px;
+	padding-top: 10px;
+	text-shadow: rgba(0, 0, 0, .5) 0.1em 0.15em 0.5em;
+    background: transparent linear-gradient(top, [[setting:welcomecolour]], [[setting:welcomecolourfade]]);
+}
+
+.gecko header div#welcome p {
+    background: [[setting:welcomecolour]] none;
+}
+
+.gecko19 header div#welcome p {
+	background: transparent -moz-linear-gradient(top, [[setting:welcomecolour]], [[setting:welcomecolourfade]]);
+}
+
+.safari header div#welcome p {
+	background: transparent -webkit-gradient(linear, left top, left bottom, from([[setting:welcomecolour]]), to([[setting:welcomecolourfade]]));
+}
+
+.opera header #welcome p,
+.ie header #welcome p {
+    background: [[setting:welcomecolour]] none;
+}
+
+header div#welcome p b {
+	font-size: 1.5em;
+}
+
+header div#menubar {
+	background: #d8d8da url(http://yui.yahooapis.com/2.8.0/build/assets/skins/sam/sprite.png) repeat-x left -100px;
+	border-left: 1px solid darkgrey;
+	width: 985px;
+	clear: left;
+	line-height: 2em;
+	padding: 0;
+	padding-left: 10px;
+	height: 2.75em;
+	overflow: visible;
+}
+
+header div#menubar .navbutton {
+	float: right;
+	border-right: 1px solid darkgrey;
+	height: 2.75em;
+	padding-right: 10px;
+	right: -1px;
+	position: relative;
+}
+
+header div#menubar .navbutton div,
+header div#menubar .navbutton form {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 3px;
+}
+
+header div#menubar .breadcrumb {
+	float: left;
+	margin: 0.2em 0;
+	color: black;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+header div#menubar .breadcrumb ul {
+	padding: 0;
+	padding-top: 3px;
+	margin: 0;
+	text-indent: 0;
+	list-style: none;
+}
+
+header div#menubar .breadcrumb li {
+	display: inline;
+}
+
+header div#menubar .breadcrumb li a {
+	color: black;
+}
+
+header div#menubar .menu {
+	float: right;
+}
+
+
+
+
+/* Footer */
+body>footer {
+	background: #dbdbdb url([[pix:theme|footer]]) repeat-x top;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	width: 84%;
+	left: 8%;
+	right: 8%;
+	clear: both;
+	height: 55px;
+	margin: 0 auto;
+	/*position: absolute;
+	bottom: 0;*/
+}
+
+.safari footer {
+	-webkit-border-top-left-radius:15px;
+	-webkit-border-top-right-radius:15px;
+}
+
+.gecko footer {
+	-moz-border-radius-topleft:15px;
+	-moz-border-radius-topright:15px;
+}
+
+footer span.right {
+	text-align: right;
+	float: right;
+	padding-right: 5px;
+}
+
+footer span.right #footerloginbutton.yui-button {
+	vertical-align: baseline;
+}
+
+footer p {
+	text-align: center;
+	clear: both;
+	padding-top: 5px;
+	font-size: 85%;
+}
+
+
+/* Menu editor */
+ul#menueditor li {
+	padding-left: 2.5em;
+	list-style-type: none;
+}

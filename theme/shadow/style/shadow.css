@@ -1,0 +1,242 @@
+/* INIZIO DI: header e footer liquidi con spigoli arrotondati */
+html {
+	background-image: url([[pix:theme|bg]]);
+    background-repeat: repeat-x;
+    margin-bottom:125px!important;
+    background-color:#4FADDC;
+}
+
+body {
+    /*margin-left:auto;*/
+    margin-left:auto;
+    margin-right:auto;
+    width:90%;
+    min-width:800px;
+}
+
+#page {
+	margin: 25px 0 0 0;
+}
+/*.headermainbg img { border: 1px #000 solid; }*/
+
+#header {
+	height: 85px;
+	border: 0px transparent none;
+	background-color: transparent;
+}
+
+#header .logininfo {
+	display: inline;
+	margin-right: 5px;
+	vertical-align: text-top;
+	float:right;
+	top: 35px;
+	right: 6%;
+	position: absolute;
+}
+
+#header .langmenu {
+	float:right;
+	top: 85px;
+	right: 6%;
+	position: absolute;
+}
+
+.headermain {
+	z-index:20;
+
+	margin: 0 0 0 0;
+	padding: 0px;
+	width: 100%;
+	height: 85px;
+
+	border: 0px transparent none;
+	border-bottom: 5px solid #F57110;
+}
+
+.headermainsx {
+	height: 85px;
+	width: 21px;
+
+	background-image: url([[pix:theme|headerpix/headersx]]);
+}
+
+.headermain .headermainbg {
+	margin: -85px 21px 0 21px;
+	height: 85px;
+
+	background-image: url([[pix:theme|headerpix/headerbg]]);
+	background-repeat: repeat-x;
+
+    text-align: left;
+}
+
+.headermain .headermaindx {
+	float: right;
+
+    height: 85px;
+    width:21px;
+
+	background-image: url([[pix:theme|headerpix/headerdx]]);
+    background-position: right;
+    margin-top: -85px;
+}
+
+.headermenu {
+	position: relative;
+	margin-top: -23px;
+	right: 2px;
+	z-index: 40;
+}
+
+#header .headermenu {
+	margin-top: 0.4em;
+	margin-left: 5px;
+	right: 2px;
+	z-index: 40;
+	margin-right: 5px;
+}
+
+.shrinker {
+	background-color: white;
+}
+
+.block .header .block_action {
+    margin-top:0.25em;;
+}
+
+.yui3-skin-sam .yui3-menu-content,
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label {
+	margin-top: .2em;
+	border: none;
+}
+
+.yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-content {
+	border: none;
+	background-color: #F69B33;
+}
+
+.yui3-skin-sam .yui3-menu-label,
+.yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-label,
+.yui3-skin-sam .yui3-menuitem-content,
+.yui3-skin-sam .yui3-menu .yui3-menu .yui3-menuitem-content {
+	color: #FFF;
+}
+
+/*
+.yui3-menu-content a:visited,
+.yui3-menu-content a:link,
+.yui3-menu-horizontal a:visited,
+.yui3-menu-horizontal a:link,
+.yui3-menu-label a:visited,
+.yui3-menu-label a:link,
+.yui3-menuitem-content a:visited,
+.yui3-menuitem-content a:link, {
+	color: #FFF;
+}*/
+
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label {
+	color: white;
+	font-weight: bold;
+}
+
+.breadcrumb {
+    margin-top: .3em;
+    margin-left: 1em;
+}
+
+.navbar {
+    background-color: #FFF;
+	height: 2em;
+	font-weight: bold;
+}
+
+.menubar {
+	background-image: url([[pix:theme|menu/menubg]]);
+	height: 2em;
+	overflow: visible;
+	width: 100%;
+}
+
+/***
+ *** Footer
+ ***/
+
+#footer {
+    height:86px;
+
+	border: 0 transparent none;
+	background-color: transparent;
+
+    color:#999999;
+    font-weight:bold;
+
+    margin-top:0;
+    text-align:left;
+    clear: both;
+}
+
+#footer .footersx {
+	width: 21px;
+	height: 86px;
+
+	background-image: url([[pix:theme|footerpix/footersx]]);
+}
+
+#footer .footerbg {
+	text-align: right;
+
+	margin: 0 21px 0 21px;
+	height: 86px;
+
+	background-image: url([[pix:theme|footerpix/footerbg]]);
+	background-repeat: repeat-x;
+
+    margin-top: -86px;
+}
+
+#footer .footerdx {
+	float: right;
+
+    height: 86px;
+    width:21px;
+
+	background-image: url([[pix:theme|footerpix/footerdx]]);
+    background-position: right;
+    margin-top: -86px;
+}
+
+#footer .helplink {
+	text-align: left;
+
+	margin: 0 21px 0 21px;
+	height: 86px;
+
+    margin-top: -86px;
+    padding-top: 9px;
+}
+
+#footer .moodlelogo {
+	text-align: center;
+
+	margin: 0 21px 0 21px;
+	height: 86px;
+
+    margin-top: -88px;
+    margin-bottom: 6px;
+}
+
+#footer .validators {
+	margin-top: 0px;
+	background-color: #FFF;
+	border: none;
+}
+
+#footer .logininfo {
+    /* eredita misteriosamente da #header .logininfo
+    e quindi sono costretto ad aggiungere display: block;*/
+    display: block;
+    padding-top: 9px;
+}
+
+/* FINE DI: header e footer liquidi con spigoli arrotondati */
